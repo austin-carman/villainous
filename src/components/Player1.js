@@ -1,4 +1,5 @@
 import { villains } from "../data/villains"; // change this to an api?
+import Heroes from "./Heroes";
 
 function Player1() {
   // villain deck discard
@@ -25,12 +26,7 @@ function Player1() {
     <div className="player-container">
       <div className="realm-container">
         <div className="location-container">
-          <div className="heroes-container">
-            <div className="hero-strength-container">
-              <h6 className="hero-strength">4</h6>
-            </div>
-            <h6>{villains[0].fateDeck[0].name}</h6>
-          </div>
+          <Heroes name={villains[0].fateDeck[0].name} /> {/* prop is hardcoded here */}
           <div className="actions-container">
             <h2>{villains[0].location1.name}</h2>
             <div className="action">{villains[0].location1.action1}</div>
