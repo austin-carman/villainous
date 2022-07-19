@@ -1,6 +1,6 @@
-function Heroes(props) {
+function Allies(props) {
   return (
-    <div className="heroes-container">
+    <div className="allies-container">
       <div className="hero-strength-container">
         <h6 className="hero-strength">4</h6>
       </div>
@@ -9,4 +9,4 @@ function Heroes(props) {
   )
 }
 
-export default Heroes;
+export default Allies;
