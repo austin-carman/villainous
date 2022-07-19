@@ -1,6 +1,7 @@
 import { villains } from "../data/villains"; // change this to an api?
 import Heroes from "./Heroes";
 import Allies from "./Allies";
+import Actions from "./Actions";
 
 function Player1() {
   // villain deck discard
@@ -9,11 +10,9 @@ function Player1() {
   // how to handle heroes/allies/items played on location
   // how do i attach items to a hero/ally
   // have state for each location.. add heroes/allies/items to that location?
+
   // components
   // make constructing location a component
-  // constructing heroes a component
-  // constructing allies/items a component
-  // constructing actions a component
   // game options a component
   // power
   // character objective/guide
@@ -27,21 +26,9 @@ function Player1() {
     <div className="player-container">
       <div className="realm-container">
         <div className="location-container">
-          <Heroes name={villains[0].fateDeck[0].name} /> {/* prop is hardcoded here */}
-          <div className="actions-container">
-            <h2>{villains[0].location1.name}</h2>
-            <div className="action">{villains[0].location1.action1}</div>
-            <div className="action">{villains[0].location1.action2}</div>
-            <div className="action">{villains[0].location1.action3}</div>
-            <div className="action">{villains[0].location1.action4}</div>
-          </div>
-          <Allies name={villains[0].villainDeck[0].name} />
-          {/* <div className="allies-container">
-            <div className="hero-strength-container">
-              <h6 className="hero-strength">4</h6>
-            </div>
-            <h6>{villains[0].villainDeck[0].name}</h6>
-          </div> */}
+          <Heroes name={villains[0].fateDeck[0].name} /> {/* prop is hardcoded here - fix */}
+          <Actions name={villains[0].location1} /> {/* prop is hardcoded here - fix */}
+          <Allies name={villains[0].villainDeck[0].name} /> {/* prop is hardcoded here - fix */}
         </div>
       </div>
       <div className="options-container">
