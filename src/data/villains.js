@@ -5,34 +5,48 @@ export const villains = [
     image: "",
     objective: "Have a Wicket at each location and successfully take a shot.",
     guide: "Queen of Hearts has some cards with Activated Abilities. See the Instructions for details on how cards with Activated Abilities are played and their Abilities activated. Card Guards are played like other Allies, and may be used to defeat Heroes. However, if you activate a Card Guard's Activated Ability, it is converted into a Wicket and is no longer considered a Card Guard. Rotate the card 90 degrees to indicate that it is a Wicket. Wickets may not be used to defeat Heroes. However, you may convert a Wicket back to a Card Guard by activating its Ability again. Note: A Wicket is still considered to be an Ally. They may be moved as normal, and their Strength is still affected by any Abilities on cards that are in your Realm. In addition, Spears may be added to Wickets to increase their Strength, thereby increasing your chances of successfully taking a shot. If there is at least one Wicket at each location in your Realm, you may play Take the Shot to attempt to win the game. Reveal the top five cards of your Villain deck and add up the total Cost of those cards. If the total Cost of the revealed cards is lower than the total Strength of all of the Wickets in your Realm, then you make the shot and win the game! If you do not make the shot, discard Take the Shot and the five cards you revealed. You can try again by playing another Take the Shot card, which there are three of in your deck. Makes You Smaller and Fury allow Queen of Hearts to Shrink Heroes, When a Hero is Shrunk, rotate the Hero 45 degrees so that only one action symbol is covered by the corner of the card, leaving the other action available. If there are multiple Heroes at a location with a Shrunken Hero, the Shrunken Hero is the only Hero that covers up an action symbol. The other Heroes do not cover any actions until the Shrunken Hero is moved or defeated. When an opponent plays Makes You Larger, they can choose a Hero in your Realm to Enlarge. The Hero card is rotated 90 degrees so that it also covers the nearest action symbol at an adjacent location. Your opponent chooses which action to cover. An Enlarged Hero is considered to be at both locations. When you turn an Enlarged Hero back to normal, you must return the Hero to its original location.",
-    location1: {
-      name: "Courtyard",
-      action1: "Discard Cards",
-      action2: "Move an Item or Ally",
-      action3: 2,
-      action4: "Play a Card",
-    },
-    location2: {
-      name: "Hedge Maze",
-      action1: "Play a Card",
-      action2: "Activate",
-      action3: 3,
-      action4: "Play a Card",
-    },
-    location3: {
-      name: "Tulgey Wood",
-      action1: "Fate",
-      action2: "Play a Card",
-      action3: "Discard Cards",
-      action4: "Vanquish",
-    },
-    location4: {
-      name: "White Rabbit's House",
-      action1: "Play a Card",
-      action2: 1,
-      action3: "Activate",
-      action4: "Fate",
-    },
+    locations: [
+      {
+        id: 1,
+        name: "Courtyard",
+        actions: [
+          "Discard Cards",
+          "Move an Item or Ally",
+          2,
+          "Play a Card",
+        ]
+      },
+      {
+        id: 2,
+        name: "Hedge Maze",
+        actions: [
+          "Play a Card",
+          "Activate",
+          3,
+          "Play a Card",
+        ]
+      },
+      {
+        id: 3,
+        name: "Tulgey Wood",
+        actions: [
+          "Fate",
+          "Play a Card",
+          "Discard Cards",
+          "Vanquish",
+        ]
+      },
+      {
+        id: 4,
+        name: "White Rabbit's House",
+        actions: [
+          "Play a Card",
+          1,
+          "Activate",
+          "Fate",
+        ]
+      },
+    ],
     villainDeck: [
       {
         id: 1,
