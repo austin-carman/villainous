@@ -1,6 +1,6 @@
 import { villains } from "../data/villains"; // change this to an api?
 
-function Player1() {
+function Realm() {
   // villain deck discard
   // fate deck discard
   // player token
@@ -73,4 +73,4 @@ function Player1() {
   )
 }
 
-export default Player1;
+export default Realm;

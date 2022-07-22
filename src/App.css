@@ -1,0 +1,18 @@
+.character-selection {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  background-color: lightgray;
+}
+.characters-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.character {
+  background-color: grey;
+}
+button {
+  padding: 2%;
+  margin: 2%;
+}
