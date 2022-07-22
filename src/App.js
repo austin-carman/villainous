@@ -1,10 +1,12 @@
 import './App.css';
-import Player1 from './components/Player1';
+import Realm from './components/Realm';
+import CharacterSelection from './components/CharacterSelection';
 
 function App() {
   return (
     <div className="App">
-      <Player1 />
+      <CharacterSelection />
+      <Realm />
     </div>
   );
 }
